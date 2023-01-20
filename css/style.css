@@ -92,7 +92,7 @@ a {
 	cursor:pointer;
 }
 a:hover{
-	color:#FBAF32;
+	color:#fdc300;
 }
 a,li{
 	transition:0.5s ease all;
@@ -114,7 +114,7 @@ a:focus,button:focus,button:focus, input:focus, select:focus, textarea:focus{
 	overflow-y:hidden;
 }
 body::selection{
-	background: #FBAF32;
+	background: #fdc300;
 }
 h1{
 	font-size: 3.125rem;
@@ -196,7 +196,7 @@ img {
 	color:#000000;
 }
 .primary{
-	color:#FBAF32;
+	color:#fdc300;
 }
 .secondry{
 	color:#000000;
@@ -221,7 +221,7 @@ img {
 	background-color:#000000;
 }
 .primary-bg{
-	background-color:#FBAF32;
+	background-color:#fdc300;
 }
 .secondry-bg{
 	background-color:#000000;
@@ -251,31 +251,31 @@ img {
     outline: none !important;
 }
 .btn-primary {
-    background: #FBAF32;
-    border-color: #FBAF32;
+    background: #fdc300;
+    border-color: #fdc300;
 }
 .btn-primary:hover , .btn-primary:focus {
-    color: #FBAF32;
+    color: #fdc300;
     background: #ffffff;
-    border-color: #FBAF32;
+    border-color: #fdc300;
     box-shadow: inset 0 -50px 0 #ffffff !important;
 }
 .btn-outline {
     border-color: #ffffff;
 }
 .btn-outline:hover , .btn-outline:focus {
-    background: #FBAF32;
+    background: #fdc300;
     border-color: #ffffff;
     color: #ffffff;
-    box-shadow: inset 0 -50px 0 #FBAF32 !important;
+    box-shadow: inset 0 -50px 0 #fdc300 !important;
 }
 .btn-black {
     background: #000000;
 }
 .btn-black:hover , .btn-black:focus {
-    color: #FBAF32;
+    color: #fdc300;
     background: #ffffff;
-    border-color: #FBAF32;
+    border-color: #fdc300;
     box-shadow: inset 0 -50px 0 #ffffff !important;
 }
 
@@ -365,7 +365,7 @@ input::-webkit-calendar-picker-indicator{
    left: 5px;
    width: 20px;
    height: 20px;
-   color: #FBAF32;
+   color: #fdc300;
 }
 .reservation-form .form-control#date {
     background-image: url('../images/calender.png');
@@ -427,7 +427,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
     top: 50%;
     transform: translate(0px, -50%);
     font-size: 16px;
-    color: #FBAF32;
+    color: #fdc300;
     background-image: url(../images/dropdown.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -468,7 +468,7 @@ form.keepup-form .formrow .input-group-append button.btn.btn-secondary {
 }
 form.keepup-form .formrow .input-group-append button.btn.btn-secondary:hover {
     transform: translate(10px, 0px);
-    color: #FBAF32;
+    color: #fdc300;
 }
 .form-control::placeholder {
     font-size: 16px;
@@ -522,7 +522,7 @@ a#toTopBtn {
     position: fixed !important;
     top: 0 !important;
     width: 100%;
-    background: #FBAF32 !important;
+    background: #fdc300 !important;
     z-index: 100;
     animation: stuckMoveDown .6s;
 }
@@ -620,7 +620,7 @@ ul.dropdown-menu {
 }
 .footer .main-footer .footer-widget ul.widget-list li a:hover i {
     transform: rotate(90deg);
-    background: #FBAF32;
+    background: #f0a414;
 }
 .footer .main-footer .footer-widget ul.widget-list li a:hover i::before {
     transform: rotate(-90deg);
@@ -629,7 +629,7 @@ ul.dropdown-menu {
     transition: .5s ease;
 }
 .footer .main-footer .footer-widget ul.widget-list li a:hover .details p {
-    color: #FBAF32;
+    color: #fdc300;
 }
 .footer .main-footer .footer-widget ul.widget-list li a i::before {
     transform: rotate(-45deg);
@@ -650,7 +650,7 @@ ul.dropdown-menu {
 }
 
 .copyright-bar ul.social-media li a {
-    background-color: #fd5728;
+    background-color: #f9c311;
     width: 40px;
     height: 40px;
     display: flex;
@@ -955,6 +955,12 @@ ul.dropdown-menu {
     position: relative;
     margin: 50px 0 0 0 !important;
 }
+.testimonials-block .testimonial-bar img{
+    width: 100px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
+}
 .Testimonial-block .carousel-indicators button {
     width: 10px;
     height: 10px;
@@ -965,8 +971,8 @@ ul.dropdown-menu {
     margin: 0 3.5px;
 }
 .Testimonial-block .carousel-indicators button.active {
-    border-color: #FBAF32;
-    background: #FBAF32;
+    border-color: #fdc300;
+    background: #fdc300;
 }
 .content-white.Testimonial-block .carousel-indicators button {
     border: 1px solid #ffffff;
@@ -1027,7 +1033,7 @@ ul.dropdown-menu {
     margin: 0 20px;
 }
 .tabs-bar .nav .nav-link.active , .tabs-bar .nav .nav-link:hover{
-    border-bottom: 1px solid #FBAF32;
+    border-bottom: 1px solid #fdc300;
     color: #000000;
 }
 ul.menu-listing li .leftbar {
@@ -1106,7 +1112,7 @@ ul.menu-listing li {
 }
 .insta-box .overlay i {
     font-size: 40px;
-    color: #FBAF32;
+    color: #fdc300;
 }
 .insta-box:hover .overlay {
     opacity: 1;
@@ -1470,7 +1476,7 @@ section.Reservation-bar {
     font-weight: 600;
 }
 .blogs-sidebar .sidebar-blogs-listing ul li a:hover h5 {
-    color: #FBAF32;
+    color: #fdc300;
 }
 .blogs-sidebar .sidebar-blogs-listing ul li .date {
     margin: 0 0;
@@ -1554,7 +1560,7 @@ section.Reservation-bar {
 }
 
 .bg-yellow {
-	background-color: #fd5728;
+	background-color: #f9c311;
 }
 
 .coffee-color h2,
@@ -1606,104 +1612,4 @@ img.googleplay-original {
 	display: block;
 	width: 163px;
 	height: 50px;
-}
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-.testimonials {
-  padding: 80px 0;
-  background: url('images/bg-3.jpg') no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-
-.testimonials::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-
-.testimonials .section-header {
-  margin-bottom: 40px;
-}
-
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
-  overflow: hidden;
-}
-
-.testimonials .testimonial-item {
-  text-align: center;
-  color: #000;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 100px;
-  border-radius: 50%;
-  border: 6px solid rgba(255, 255, 255, 0.15);
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #000;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #000;
-  margin: 0 0 15px 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: #000;
-  font-size: 26px;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
-  color: #000;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  opacity: 1;
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffb727;
-}
-
-@media (min-width: 992px) {
-  .testimonials .testimonial-item p {
-    width: 80%;
-  }
 }
