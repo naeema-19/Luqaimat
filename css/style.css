@@ -1507,6 +1507,11 @@ img.googleplay-original {
     margin: 0 0 10px 0;
   }
 }
+@media (max-width: 992px){
+    .breadcrumbs{
+        display: none;
+    }
+}
 
 .breadcrumbs ol {
   display: flex;
