@@ -1541,3 +1541,234 @@ img.googleplay-original {
     display: inline-block;
   }
 }
+ /* ===================================
+Start Find Our Location
+=====================================*/
+.fa-phone, .fa-whatsapp{
+   color: #fff;
+   background-color: #84441c;
+   border-radius: 50%;
+   padding: 4px;
+}
+.location-area {
+  background-image: url(../images/map.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center center;
+  z-index: 1;
+}
+.location-area::after {
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+.location-area.location-three-area::after {
+  background: #fff;
+}
+
+.single-location-content {
+  padding-right: 30px;
+}
+.single-location-content.location-two-content .section-title h2 {
+  color: #333333;
+}
+.single-location-content.location-two-content .section-title p {
+  color: #555555;
+}
+.single-location-content.location-two-content h3 {
+  color: #333333;
+}
+.single-location-content.location-two-content.location-page .location-list ul {
+  margin-bottom: 0;
+}
+.single-location-content.location-two-content .location-list ul li {
+  color: #555555;
+}
+.single-location-content.location-two-content .location-list ul li:last-child {
+  margin-bottom: 0;
+}
+.single-location-content.location-two-content .location-list ul li i {
+  color: #000;
+}
+.single-location-content .section-title {
+  margin-bottom: 20px;
+}
+.single-location-content .section-title h2 {
+  font-size: 45px;
+}
+.single-location-content h3 {
+  font-size: 18px;
+  color: var(--whiteColor);
+  font-family: var(--bodyFontFamily);
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.single-location-content .location-list ul {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  margin-bottom: 27px;
+}
+.single-location-content .location-list ul li {
+  list-style-type: none;
+  color: #ABB8C3;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--bodyFontFamily);
+  margin-bottom: 10px;
+  padding-left: 30px;
+  position: relative;
+}
+.single-location-content .location-list ul li i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 25px;
+  color: #000;
+}
+.single-location-content .default-btn {
+  padding: 14.5px 42px 13.5px 42px;
+}
+
+.location-map {
+  position: relative;
+}
+.location-map .location-text {
+  position: absolute;
+  right: 52%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.location-map .location-text.location-1 {
+  left: 40%;
+  right: auto;
+  bottom: 50%;
+  transform: translateY(0);
+  top: auto;
+}
+.location-map .location-text.location-1 p {
+  opacity: 1;
+  visibility: ;
+}
+.location-map .location-text.location-2 {
+  position: absolute;
+  right: 52%;
+  top: 47%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.location-map .location-text.location-2 p {
+  opacity: 1;
+  visibility: ;
+}
+.location-map .location-text.location-3 {
+  left: 68%;
+  right: auto;
+  top: 50%;
+}
+.location-map .location-text.location-3 p {
+  opacity: ;
+  visibility: ;
+}
+.location-map .location-text.location-4 {
+  left: 70%;
+  right: auto;
+  top: 47%;
+}
+.location-map .location-text.location-4 p {
+  opacity: 1;
+  visibility: ;
+}
+.location-map .location-text.location-5 {
+  right: 45%;
+  left: auto;
+  top: 49%;
+}
+.location-map .location-text.location-5 p {
+  opacity: 1;
+  visibility: ;
+}
+.location-map .location-text.location-6 {
+  right: 19%;
+  left: auto;
+  top: 36%;
+}
+.location-map .location-text.location-6 p {
+  opacity: 0;
+  visibility: hidden;
+}
+.location-map .location-text span {
+  width: 12px;
+  height: 12px;
+  background-color: #cd6511;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+  top: 35px;
+  left: 35px;
+  cursor: pointer;
+}
+.location-map .location-text p {
+  font-size: 14px;
+  background-color: var(--whiteColor);
+  padding: 0px -30px;
+  display: inline-block;
+  color: #cd6511;
+  transition: var(--transition);
+  position: relative;
+  bottom: -38px;
+}
+.location-map .location-text p::after {
+  /*content: "";
+  display: block;
+  position: absolute;
+  bottom: -13px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border: solid transparent 7px;
+  border-bottom-color: var(--whiteColor);
+  transform: rotate(180deg);
+  transition: var(--transition);*/
+}
+.location-map .location-text p:hover {
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+}
+.location-map .location-text p:hover::after {
+  border-bottom-color: var(--mainColor);
+}
+.location-map .location-text:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+ .info-box {
+  color: #000;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+}
+
+
+ .info-box h3 {
+  font-size: 20px;
+  color: #572304;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+ .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
