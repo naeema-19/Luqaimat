@@ -177,7 +177,7 @@ img {
     border-width: 5px!important;
 }
 /*Font Family css*/
-.font-cursive{font-family: 'Great Vibes', cursive;}
+.font-cursive{font-family: 'Mulish', sans-serif}
 .font-futura{font-family: "Futura PT";}
 .font-Av{font-family: 'Avenir Next LT Pro' !important;}
 
@@ -665,6 +665,7 @@ ul.dropdown-menu {
     transform: rotate(360deg);
     background: #000000;
 }*/
+
 /*==========================================================
 							Homepage
 ==========================================================*/
@@ -716,8 +717,8 @@ ul.dropdown-menu {
 	z-index: 2;
 }
 .home-banner .carousel-inner .item .carousel-caption h5 {
-    font-size: 70px;
-    line-height: .6;
+    font-size: 2rem;
+    line-height: 1;
 }
 .home-banner .carousel-inner .item .carousel-caption h2 {
     font-size: 90px;
@@ -730,7 +731,8 @@ ul.dropdown-menu {
     margin: 0 0 0px 0;
     font-size: 20px;
     letter-spacing: 2px;
-    color: #a9341c;
+    color: #f9e813
+;
     font-family: "Futura PT";
     text-align: center;
     font-weight: bolder;
