@@ -674,6 +674,7 @@ ul.dropdown-menu {
     width: 100%;
     height: auto;
     position: relative;
+
 }
 .fixed-header .btn-primary {
     background: #000;
@@ -681,12 +682,20 @@ ul.dropdown-menu {
 }
 .home-banner .carousel-inner .item:after {
     content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, transparent 0%, black 100%);
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: auto;
     z-index: 1;
+    
 }
 .home-banner .carousel-inner .item img {
     width: 100%;
@@ -721,9 +730,10 @@ ul.dropdown-menu {
     margin: 0 0 0px 0;
     font-size: 20px;
     letter-spacing: 2px;
-    color: #ffffff;
+    color: #a9341c;
     font-family: "Futura PT";
     text-align: center;
+    font-weight: bolder;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -1467,6 +1477,4 @@ img.googleplay-original {
     padding-left: 0.5px;
 
 }
-
-
 
