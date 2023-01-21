@@ -1,12 +1,3 @@
-/*------------------------------------------------------------------
-[Master Stylesheet]
-Theme : ESS Restaurant
-Author Name: Naveen Kumar Verma
-Description: Restaurant - Responsive theme and desgin
-Version: 1.0
-license: https://euclidesoftwaresolutions.com/
-Copyright 2021 ESS Authors
-*/
 
 /*===========Responsive css  ==========*/
 
@@ -84,7 +75,7 @@ Copyright 2021 ESS Authors
         z-index: 2;
     }
     .home-banner .carousel-inner .item .carousel-caption h5 {
-        font-size: 50px;
+        font-size: 1.5rem;
         line-height: 1;
     }
     .home-banner .carousel-inner .item .carousel-caption h2 {
@@ -352,8 +343,8 @@ Copyright 2021 ESS Authors
         font-size: 40px;
     }
     .home-banner .carousel-inner .item .carousel-caption h5 {
-        font-size: 35px;
-        line-height: .6;
+        font-size: 1rem;
+        line-height: 1;
         text-align: center !important;
     }
     .story-block .story-detail h5 {
