@@ -506,7 +506,7 @@ a#toTopBtn {
 							Header
 ==========================================================*/
 .fixed-header .navbar-brand img {
-    height: 100px !important;
+    height: 100% !important;
 }
 .navbar-brand img {transition: .5s ease-in-out;}
 .sticky {
