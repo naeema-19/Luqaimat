@@ -325,6 +325,7 @@
     .navbar-brand img {
         transition: .5s ease-in-out;
         height: 60px !important;
+        width: 60px !important;
     }
     .home-banner {
         min-height: auto;
