@@ -507,6 +507,8 @@ a#toTopBtn {
 ==========================================================*/
 .fixed-header .navbar-brand img {
     height: 100% !important;
+    width: 100%;
+    object-fit: contain;
 }
 .navbar-brand img {transition: .5s ease-in-out;}
 .sticky {
