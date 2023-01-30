@@ -1283,7 +1283,13 @@ Start Find Our Location
   margin-bottom: 40px;
   text-transform: uppercase;
 }
-.bx-phone, .bx-whatsapp{
+.bx-phone{
+   color: #fff;
+   background-color: #84441c;
+   border-radius: 50%;
+   padding: 4px;
+}
+.bxl-whatsapp{
    color: #fff;
    background-color: #84441c;
    border-radius: 50%;
