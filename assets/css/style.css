@@ -104,6 +104,14 @@ h6 {
   margin-top: -15px;
 
 }
+#header .logo-scroll img {
+  max-height: 150px;
+  position: absolute;
+  margin-top: -15px;
+  visibility: hidden;
+
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -628,7 +636,7 @@ section {
 .breadcrumbs {
   padding: 18px 0;
   background: #f8f9fa;
-  min-height: 40px;
+  min-height: 80px;
   margin-top: 80px;
 }
 
@@ -745,10 +753,11 @@ section {
   font-size: 1.2rem;
 }
 .about .image {
-  background-image: url('../img/luq.jpg') center center no-repeat;
+  background-image: url('assets/img/che.jpg') center center no-repeat;
   background-size: cover;
-  min-height: 5rem;
+  min-height: 400px;
 }
+
 /*--buttons--*/
 .btn {
     padding: 15px 25px;
@@ -1283,17 +1292,15 @@ Start Find Our Location
   margin-bottom: 40px;
   text-transform: uppercase;
 }
-.bx-phone{
+.bx-phone ,.bxl-whatsapp {
    color: #fff;
    background-color: #84441c;
    border-radius: 50%;
    padding: 4px;
 }
-.bxl-whatsapp{
+.bi-1-circle{
    color: #fff;
    background-color: #84441c;
-   border-radius: 50%;
-   padding: 4px;
 }
 .location-area {
   background-image: url(../images/map.png);
@@ -1521,11 +1528,20 @@ Start Find Our Location
 }
 
 
- .info-box h3 {
+ .info-box h3  {
   font-size: 20px;
   color: #572304;
   font-weight: 700;
   margin: 10px 0;
+}
+ .info-box h3 a{
+  font-size: 20px;
+  color: #572304;
+  font-weight: 700;
+  margin: 10px 0;
+}
+ .info-box h3 a:hover{
+ color: #e6b40b;
 }
 
  .info-box div a{
@@ -1534,6 +1550,9 @@ Start Find Our Location
   font-size: 14px;
   margin-bottom: 0;
   color: #572304;
+}
+ .info-box div a:hover{
+  color: #e6b40b;
 }
  .info-box p{
   padding: 0;
@@ -1666,6 +1685,24 @@ Start Find Our Location
     transform: rotate(360deg);
   }
 }
+#form-message-warning, #form-message-success {
+  display: none; }
+
+#form-message-warning {
+  color: red; }
+
+#form-message-success {
+  color: #28a745;
+  font-size: 20px;
+  font-weight: 700; }
+
+.submitting {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  display: none;
+  font-size: 16px;
+  font-weight: 500; }
 
 /*--------------------------------------------------------------
 # Blog
