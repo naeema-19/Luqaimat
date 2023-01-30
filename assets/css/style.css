@@ -1,10 +1,3 @@
-/**
-* Template Name: Sailor - v4.10.0
-* Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -412,7 +405,7 @@ h6 {
 #hero h2 {
   color: #fff;
   margin-bottom: 20px;
-  font-size: 90px;
+  font-size: 100px;
   font-weight: 700;
 }
 
@@ -532,7 +525,25 @@ h6 {
 
 @media (max-width: 768px) {
   #hero h2 {
-    font-size: 28px;
+    font-size: 30px;
+  }
+  #hero p {
+    font-size: 16px;
+  }
+  #hero .p1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 795px) {
+  .last {
+    padding-bottom: 500px;
+  }
+}
+
+@media (max-width: 364px) {
+  .last {
+    padding-bottom: 600px;
   }
 }
 
