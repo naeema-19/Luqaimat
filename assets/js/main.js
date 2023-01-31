@@ -1,9 +1,4 @@
-/**
-* Template Name: Sailor - v4.10.0
-* Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -123,6 +118,15 @@
       this.nextElementSibling.classList.toggle('dropdown-active')
     }
   }, true)
+    /**
+   * Preloader
+   */
+  let preloader = select('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove()
+    });
+  }
 
   /**
    * Hero carousel indicators
