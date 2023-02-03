@@ -70,6 +70,27 @@ div#preloader {
   overflow: visible;
   background: #fff url("../img/preloader.gif") no-repeat center center;
 }
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #048023; /* Dark Green */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spinloader 2s linear infinite;
+}
+.loader img{
+    height : 120px;
+    width : 120px;
+    animation: spinlogo 2s linear infinite;
+}
+@keyframes spinloader {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes spinlogo {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -150,8 +171,8 @@ div#preloader {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Futura PT";
-  font-size: 15px;
+  font-family: 'Avenir Next LT Pro';
+  font-size: 12px;
   font-weight: 500;
   color: #000;
   white-space: nowrap;
@@ -160,7 +181,7 @@ div#preloader {
 
 .navbar a i,
 .navbar a:focus i {
-  font-size: 12px;
+  font-size: 10px;
   line-height: 0;
   margin-left: 5px;
 }
@@ -401,7 +422,7 @@ div#preloader {
 
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(30, 35, 40, 0.4);
+  background-color: rgba(30, 35, 40, 0.2);
 }
 
 #hero .carousel-container {
@@ -511,7 +532,7 @@ div#preloader {
 }
 
 #hero .btn-get-started {
-  font-family: "Futura PT"
+  font-family: "Futura PT";
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -560,7 +581,12 @@ div#preloader {
 
 @media (max-width: 364px) {
   .last {
-    padding-bottom: 600px;
+    padding-bottom: 620px;
+  }
+}
+@media (max-width: 280px) {
+  .last {
+    padding-bottom: 680px;
   }
 }
 
@@ -702,18 +728,28 @@ section {
 --------------------------------------------------------------*/
 
 #story{
-  background-image: url('../img/bg/bg-2.jpg');
+  background-image: url('../img/bg/bg-222.jpg');
   background-size: cover;
-  min-height: 1000px;
+  min-height: 800px;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center;
+  font-size: ;
+}
+@media (min-width: 1300px) and (max-width:1799px){
+    #story{
+     background: url('../img/bg/bg-23.jpg') no-repeat;
+     background-size: cover;
+     min-height: 700px;
+     font-size: 20px;
+  
+    }
 }
 @media (min-width: 1800px) and (max-width:3900px){
     #story{
      background: url('../img/bg/bg-22.jpg') no-repeat;
      background-size: cover;
-     min-height: 1500px;
+     min-height: 1000px;
      font-size: 20px;
   
     }
@@ -721,9 +757,9 @@ section {
 .about .content h2 {
   font-weight: 800;
   font-size: 36px;
-  line-height: 60px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  line-height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -754,7 +790,7 @@ section {
 .about .content p {
   margin-bottom: 0;
   text-align: justify; text-justify: inter-word;
-  font-size: 24px;
+  font-size: 19.2px;
 }
 #about .content p {
   margin-bottom: 0;
@@ -764,7 +800,7 @@ section {
 .about .image img{
   background-image: url('assets/img/che.jpg') center center no-repeat;
   background-size: cover;
-  min-height: 400px;
+  max-height: 350px;
   border: 1px solid #572304;
 }
 
@@ -806,6 +842,7 @@ section {
 .btn-black:hover , .btn-black:focus {
     color: #fdc300;
     background: #ffffff;
+    border: 1px solid;
     border-color: #fdc300;
     box-shadow: inset 0 -50px 0 #ffffff !important;
 }
@@ -839,7 +876,7 @@ section {
 .menu .content h2 {
   font-weight: 800;
   font-size: 36px;
-  line-height: 60px;
+  line-height: 10px;
   margin-top: 40px;
   text-transform: uppercase;
 }
@@ -1073,165 +1110,39 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .box {
-  padding: 20px;
-  background: #fff;
-  text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-}
-
-.pricing h3 {
-  font-weight: 400;
-  margin: -20px -20px 20px -20px;
-  padding: 20px 15px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #777777;
-  background: #f8f8f8;
-}
-
-.pricing h4 {
-  font-size: 36px;
-  color: #fdc300;
-  font-weight: 600;
-  font-family: 'Avenir Next LT Pro' !important;
-  margin-bottom: 20px;
-}
-
-.pricing h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #572304;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing ul li {
-  padding-bottom: 16px;
-}
-
-.pricing ul i {
-  color: #fdc300;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .btn-wrap {
-  margin: 20px -20px -20px -20px;
-  padding: 20px 15px;
-  background: #f8f8f8;
-  text-align: center;
-}
-
-.pricing .btn-buy {
-  background: #fdc300;
-  display: inline-block;
-  padding: 8px 35px 9px 35px;
-  border-radius: 4px;
-  color: #fff;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Futura PT"
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.pricing .btn-buy:hover {
-  background: #e6b40b;
-}
-
-.pricing .featured h3 {
-  color: #fff;
-  background: #fdc300;
-}
-
-.pricing .advanced {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background: #fdc300;
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
-# Frequently Asked Questions
---------------------------------------------------------------*/
-.faq .faq-item {
-  margin: 20px 0;
-  padding: 20px 0;
-  border-bottom: 1px solid white;
-}
-
-.faq .faq-item i {
-  color: #dee2e6;
-  font-size: 20px;
-  float: left;
-  line-height: 0;
-  padding: 13px 0 0 0;
-  margin: 0;
-}
-
-.faq .faq-item h4 {
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 500;
-  margin: 0 0 10px 28px;
-  font-family: 'Avenir Next LT Pro' !important;
-}
-
-.faq .faq-item p {
-  font-size: 15px;
-}
 
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .Testimonial-block{
-     background: url('../img/bg/bg-3.jpg') center center no-repeat ;
+     background: url('../img/bg/bg-333.jpg') center center no-repeat ;
      background-size: cover;
-     min-height: 1000px;
+     min-height: 800px;
      overflow: hidden;
      background-repeat: no-repeat;
      background-position: center;
      
      
 }
+
 @media (min-width: 1800px) and (max-width:3900px){
     
     .Testimonial-block{
      background: url('../img/bg/bg-33.jpg') center center no-repeat;
      background-size: cover;
-     min-height: 1500px;
+     min-height: 1000px;
+     font-size: 20px;
+    
+}
+
+
+}
+@media (min-width: 1500px) and (max-width:1799px){
+    
+    .Testimonial-block{
+     background: url('../img/bg/bg-34.jpg') center center no-repeat;
+     background-size: cover;
+     min-height: 800px;
      font-size: 20px;
     
 }
@@ -1247,8 +1158,8 @@ section {
 .Testimonial-block .testimonial-bar p.reviewbar {
     max-width: 920px;
     margin: 0 auto 20px auto;
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 26px;
     color: #08303e;
     font-weight: bold;
     font-family: "Futura PT";
@@ -1256,8 +1167,8 @@ section {
 .Testimonial-block .testimonial-bar h6.review-name {
     max-width: 920px;
     margin: 0 auto 20px auto;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 15px;
+    line-height: 26px;
     font-weight: bold;
     font-family: "Futura PT";
 }
@@ -1664,6 +1575,18 @@ Start Find Our Location
 }
 
 .contact .php-email-form button[type=submit] {
+  background: #572304;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+#contact .content .info-box button[type=submit]:hover {
+  background: #ffc85a;
+}
+#contact .content .info-box button[type=submit] {
   background: #572304;
   border: 0;
   padding: 10px 24px;
@@ -2234,7 +2157,7 @@ Start Find Our Location
 
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 30px 0 15px 0;
   background: #fff;
 }
 
@@ -2242,7 +2165,7 @@ Start Find Our Location
   margin-bottom: 30px;
 }
 
-#footer .footer-top .footer-contact h3 {
+/*#footer .footer-top .footer-contact h3 {
   font-size: 32px;
   margin: 0 0 10px 0;
   padding: 2px 0 2px 0;
@@ -2257,14 +2180,13 @@ Start Find Our Location
   line-height: 24px;
   margin-bottom: 0;
   color: #5e5e5e;
-}
+}*/
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
   color: #37517e;
   position: relative;
-  padding-bottom: 12px;
 }
 
 #footer .footer-top .footer-links {
@@ -2370,7 +2292,7 @@ Start Find Our Location
 }
 
 .footimg{
-  max-width: 25rem;
+  max-width: 15rem;
   height: auto;
 }
 @media all and (max-width:660px){
@@ -2378,3 +2300,4 @@ Start Find Our Location
   max-width: 10rem;
   height: auto;
 }
+
