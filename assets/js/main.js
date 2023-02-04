@@ -233,5 +233,23 @@
       }
     })
   }
+window.addEventListener('scroll',()=>{
+  let image=select('.me-auto img');
+  
+  //change the image on scroll
+  //console.log(image);
+  
+  //console.log(window.scrollY)
+  if(window.scrollY<1000){
+    image.src="assets/img/logo.png";
+  }
+  else{
+    image.src="assets/img/log2.png";
+    
+    
+  }
+
+
+})
 
 })()
