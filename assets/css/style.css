@@ -60,6 +60,10 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
 div#preloader {
   position: fixed;
   left: 0;
@@ -137,10 +141,9 @@ div#preloader {
 #header .logo-scroll img {
   max-height: 150px;
   position: absolute;
-  margin-top: -15px;
-  visibility: hidden;
-
+  margin-bottom: -15px;
 }
+
 
 
 /*--------------------------------------------------------------
@@ -422,7 +425,7 @@ div#preloader {
 
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(30, 35, 40, 0.2);
+  background-color: rgba(30, 35, 40, 0);
 }
 
 #hero .carousel-container {
@@ -442,7 +445,7 @@ div#preloader {
 
 #hero h2 {
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   font-size: 100px;
   font-weight: 700;
 }
@@ -450,8 +453,8 @@ div#preloader {
 #hero p {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
-  color: #fdc300;
+  margin: 0 auto 10px auto;
+  color: #fff;
   font-weight: bolder;
   font-size: 24px;
 }
@@ -459,7 +462,7 @@ div#preloader {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   margin: 0 auto 0px auto;
-  color: #fdc300;
+  color: #fff;
   font-weight: bolder;
   font-size: 28px;
 }
@@ -748,6 +751,15 @@ section {
 @media (min-width: 1800px) and (max-width:3900px){
     #story{
      background: url('../img/bg/bg-22.jpg') no-repeat;
+     background-size: cover;
+     min-height: 1000px;
+     font-size: 20px;
+  
+    }
+}
+@media (min-width: 100px) and (max-width:800px){
+    #story{
+     background: url('../img/bg/bg-2.jpg') center center no-repeat;
      background-size: cover;
      min-height: 1000px;
      font-size: 20px;
@@ -2292,7 +2304,7 @@ Start Find Our Location
 }
 
 .footimg{
-  max-width: 15rem;
+  max-width: 27rem;
   height: auto;
 }
 @media all and (max-width:660px){
